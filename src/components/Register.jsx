@@ -3,6 +3,7 @@ import { AuthContext } from './../Providers/ContextProvider';
 import { Link } from 'react-router-dom';
 import { updateProfile } from 'firebase/auth';
 import { auth } from '../firebase/firebase_init';
+import Swal from 'sweetalert2';
 
 const Register = () => {
  
@@ -19,7 +20,11 @@ const Register = () => {
 
     createUser(email,password)
     .then(result=> {
-      console.log(result);
+      Swal.fire({
+      title: "Registered!",
+      text: "Registration Successful.",
+      icon: "success"
+    });
       form.reset();
 
       // post new user to the db
@@ -36,7 +41,7 @@ const Register = () => {
       
       updateProfile(auth.currentUser,{displayName:name,photoURL:photoURL})
       .then(()=> {
-        console.log("Update user");
+        console.log("");
       })
       .catch(error=> {
         console.log(error);

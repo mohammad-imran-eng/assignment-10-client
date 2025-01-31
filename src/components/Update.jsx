@@ -177,7 +177,7 @@ const Update = () => {
         <div>
           <button
             type="submit"
-            className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-indigo-500"
           >
             <IoIosAddCircleOutline className="mr-2" />
             UpdateEquipment

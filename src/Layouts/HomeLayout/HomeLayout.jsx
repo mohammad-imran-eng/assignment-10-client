@@ -13,7 +13,7 @@ const HomeLayout = () => {
                 <Slide direction="left" cascade triggerOnce>
                 <div className="feature flex items-center justify-center space-x-4 bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-6">
                     <FaLightbulb className="text-4xl text-yellow-400" />
-                    <span className="text-2xl font-semibold ">💡 Simplicity</span>
+                    <span className="text-2xl font-semibold ">💡 Gorgeous</span>
                 </div>
                 <div className="feature flex items-center justify-center space-x-4 bg-white bg-opacity-20 backdrop-blur-lg rounded-lg shadow-lg p-6">
                     <FaPalette className="text-4xl text-pink-400" />
